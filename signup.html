@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+
+    <style>
+        body{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-target="#primary-menu" data-toggle="collapse">
+                    menu
+                    <!-- <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i> -->
+                </button>
+                <div class="navbar-brand">
+                    edureka!
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav"> 
+                    <li><a href="our-story.html">Our Story</a></li>
+                    <li class="dropdown">
+                        <a href="courses.html">Courses</a>
+                        <!-- <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                            Courses
+                            <i class="caret"></i>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a href="cwd.html">Complete Wed Developer</a></li>
+                            <li><a href="node.html">Node Js</a></li>
+                            <li><a href="angular.html">Angular</a></li>
+                        </ul> -->
+                    </li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Not yet registered</h1>
+                <hr>
+                <h2>Sign Up</h2>
+                <hr>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="name">Name</label>
+                        <div class="col-md-6">
+                            <input id="name" type="text" name="name" class="form-control" placeholder="Enter name">
+                        </div>
+                    </div>  
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="email">email</label>
+                        <div class="col-md-6">
+                            <input id="email" type="email" name="email" class="form-control" placeholder="Enter email">
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="name">Password</label>
+                        <div class="col-md-6">
+                            <input id="password" type="password" name="password" class="form-control" placeholder="Enter password">
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="name">Confirm</label>
+                        <div class="col-md-6">
+                            <input id="cpassword" type="Confirm password" name="Confirm password" class="form-control" placeholder="Enter confirm password">
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="checkbox-grp-position">Position</label>
+                        <div id="checkbox-grp-position" class="col-md-10">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="checkbox-position" value="web developer"/>
+                                web developer
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="checkbox-position" value="Data Scientist"/>
+                                Data Scientist
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="checkbox-position" value="Systems Engineer"/>
+                                Systems Engineer   
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="checkbox-position" value="automation testing"/>
+                                automation testing
+                            </label>
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-2">
+                            <input type="reset" value="reset" class="btn btn-default">
+                            <input type="submit" value="Sign Up" class="btn btn-primary">
+                        </div>
+                    </div> 
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h1>Already have an account</h1>
+                <hr>
+                <h2>Login</h2>
+                <hr>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="email">email</label>
+                        <div class="col-md-6">
+                            <input id="email" type="email" name="email" class="form-control" placeholder="Enter email">
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="name">Password</label>
+                        <div class="col-md-6">
+                            <input id="password" type="password" name="password" class="form-control" placeholder="Enter password">
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-2">
+                            <input type="reset" value="reset" class="btn btn-default">
+                            <input type="submit" value="Login" class="btn btn-primary">
+                        </div>
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center" style="margin-top: 20px;">
+        <p class="text-center">&copy; 2022 Brain4ce Education Solutions Pvt. Ltd. All rights Reserved.
+        <a data-toggle="modal" href="#modal-tnc">Terms and Conditions</a>
+        </p>
+        <div class="modal fade" id="modal-tnc">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Terms and Conditions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>THESE TERMS, UNLESS THE SAME HAS BEEN SPECIFICALLY EXCLUDED BY ANY OTHER INSTRUMENT TO WHICH THE COMPANY AND/OR AN USER ARE SUBJECT TO, INCLUDING THIS INTRODUCTORY SECTION, CREATE A BINDING LEGAL CONTRACT BETWEEN YOU AND THE COMPANY. </p>
+                        <p>BY USING THE COMPANY PRODUCTS, YOU REPRESENT AND WARRANT THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS. IF YOU DO NOT ACCEPT THESE TERMS, YOU MUST NOT USE - AND ARE NOT AUTHORIZED TO USE - ALL OR ANY PORTION OF THE COMPANY PRODUCTS.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
